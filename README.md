@@ -67,7 +67,7 @@
 #### 安装教程
 
 1. 依赖go版本： >=1.20
-2. 克隆系项目：git clone https://gitee.com/kingsg-project/uuid.git
+2. 克隆系项目
 
 #### 使用说明
 
