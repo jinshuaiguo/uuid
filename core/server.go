@@ -3,6 +3,7 @@ package core
 import (
 	"fmt"
 	"time"
+	"uuid_srv/global"
 	"uuid_srv/initialize"
 )
 
@@ -15,8 +16,7 @@ func RunWindowsServer() {
 	Router := initialize.Routers()
 	Router.Static("/form-generator", "./resource/page")
 
-	// TODO 端口号
-	address := fmt.Sprintf(":%d", 8809)
+	address := fmt.Sprintf(":%d", global.GVA_CONFIG.Address.Prot)
 
 	s := initServer(address, Router)
 	// 保证文本顺序输出
